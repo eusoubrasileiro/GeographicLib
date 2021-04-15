@@ -12,6 +12,8 @@
 
 #include <GeographicLib/Constants.hpp>
 
+#define GEOGRAPHICLIB_GEODESIC_ORDER 8
+
 #if !defined(GEOGRAPHICLIB_GEODESIC_ORDER)
 /**
  * The order of the expansions used by Geodesic.

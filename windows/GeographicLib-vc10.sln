@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geographic", "Geographic-vc10.vcxproj", "{4CFBCD6C-956C-42BC-A863-3C60F3ED9CC1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{E6598B23-7D6F-4801-8579-C0C6BEBDE659}"
@@ -76,10 +78,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NETGeographic", "NETGeograp
 		{4CFBCD6C-956C-42BC-A863-3C60F3ED9CC1} = {4CFBCD6C-956C-42BC-A863-3C60F3ED9CC1}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projections", "../dotnet/Projections/Projections.csproj", "{74B48389-E1D1-491F-B198-ADD4878C3F2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projections", "..\dotnet\Projections\Projections.csproj", "{74B48389-E1D1-491F-B198-ADD4878C3F2B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4CFBCD6C-956C-42BC-A863-3C60F3ED9CC1} = {4CFBCD6C-956C-42BC-A863-3C60F3ED9CC1}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pymodule", "pymodule.vcxproj", "{43C86A39-1D24-4D23-811F-520B64A07794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +205,12 @@ Global
 		{74B48389-E1D1-491F-B198-ADD4878C3F2B}.Release|Win32.Build.0 = Release|x86
 		{74B48389-E1D1-491F-B198-ADD4878C3F2B}.Release|x64.ActiveCfg = Release|x64
 		{74B48389-E1D1-491F-B198-ADD4878C3F2B}.Release|x64.Build.0 = Release|x64
+		{43C86A39-1D24-4D23-811F-520B64A07794}.Debug|Win32.ActiveCfg = Debug|x64
+		{43C86A39-1D24-4D23-811F-520B64A07794}.Debug|x64.ActiveCfg = Debug|x64
+		{43C86A39-1D24-4D23-811F-520B64A07794}.Debug|x64.Build.0 = Debug|x64
+		{43C86A39-1D24-4D23-811F-520B64A07794}.Release|Win32.ActiveCfg = Release|x64
+		{43C86A39-1D24-4D23-811F-520B64A07794}.Release|x64.ActiveCfg = Release|x64
+		{43C86A39-1D24-4D23-811F-520B64A07794}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -219,5 +229,8 @@ Global
 		{57A786B5-042F-46BD-BBC6-74148C3F961F} = {E6598B23-7D6F-4801-8579-C0C6BEBDE659}
 		{BC1ADBEC-537D-487E-AF21-8B7025AAF46D} = {ED7891B2-897F-4B32-87C9-1FB393720C62}
 		{74B48389-E1D1-491F-B198-ADD4878C3F2B} = {ED7891B2-897F-4B32-87C9-1FB393720C62}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EF8E7A0-F4D9-4389-8756-90F4AB6DB588}
 	EndGlobalSection
 EndGlobal
